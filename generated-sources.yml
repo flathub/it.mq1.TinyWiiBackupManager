@@ -3752,6 +3752,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/rustls-native-certs/rustls-native-certs-0.8.1.crate
+  sha256: 7fcff2dd52b58a8d98a70243663a0d234c4e2b79235637849d15913394a247d3
+  dest: cargo/vendor/rustls-native-certs-0.8.1
+- type: inline
+  contents: '{"package": "7fcff2dd52b58a8d98a70243663a0d234c4e2b79235637849d15913394a247d3",
+    "files": {}}'
+  dest: cargo/vendor/rustls-native-certs-0.8.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/rustls-pemfile/rustls-pemfile-2.2.0.crate
   sha256: dce314e5fee3f39953d46bb63bb8a46d40c2f8fb7cc5a3b6cab2bde9721d6e50
   dest: cargo/vendor/rustls-pemfile-2.2.0
@@ -3769,6 +3779,26 @@
   contents: '{"package": "229a4a4c221013e7e1f1a043678c5cc39fe5171437c88fb47151a21e6f5b5c79",
     "files": {}}'
   dest: cargo/vendor/rustls-pki-types-1.12.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/rustls-platform-verifier/rustls-platform-verifier-0.6.1.crate
+  sha256: be59af91596cac372a6942530653ad0c3a246cdd491aaa9dcaee47f88d67d5a0
+  dest: cargo/vendor/rustls-platform-verifier-0.6.1
+- type: inline
+  contents: '{"package": "be59af91596cac372a6942530653ad0c3a246cdd491aaa9dcaee47f88d67d5a0",
+    "files": {}}'
+  dest: cargo/vendor/rustls-platform-verifier-0.6.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/rustls-platform-verifier-android/rustls-platform-verifier-android-0.1.1.crate
+  sha256: f87165f0995f63a9fbeea62b64d10b4d9d8e78ec6d7d51fb2125fda7bb36788f
+  dest: cargo/vendor/rustls-platform-verifier-android-0.1.1
+- type: inline
+  contents: '{"package": "f87165f0995f63a9fbeea62b64d10b4d9d8e78ec6d7d51fb2125fda7bb36788f",
+    "files": {}}'
+  dest: cargo/vendor/rustls-platform-verifier-android-0.1.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -3869,6 +3899,16 @@
   contents: '{"package": "897b2245f0b511c87893af39b033e5ca9cce68824c4d7e7630b5a1d339658d02",
     "files": {}}'
   dest: cargo/vendor/security-framework-2.11.1
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/security-framework/security-framework-3.4.0.crate
+  sha256: 60b369d18893388b345804dc0007963c99b7d665ae71d275812d828c6f089640
+  dest: cargo/vendor/security-framework-3.4.0
+- type: inline
+  contents: '{"package": "60b369d18893388b345804dc0007963c99b7d665ae71d275812d828c6f089640",
+    "files": {}}'
+  dest: cargo/vendor/security-framework-3.4.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
