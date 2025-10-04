@@ -904,16 +904,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/core_maths/core_maths-0.1.1.crate
-  sha256: 77745e017f5edba1a9c1d854f6f3a52dac8a12dd5af5d2f54aecf61e43d80d30
-  dest: cargo/vendor/core_maths-0.1.1
-- type: inline
-  contents: '{"package": "77745e017f5edba1a9c1d854f6f3a52dac8a12dd5af5d2f54aecf61e43d80d30",
-    "files": {}}'
-  dest: cargo/vendor/core_maths-0.1.1
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/cpufeatures/cpufeatures-0.2.17.crate
   sha256: 59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280
   dest: cargo/vendor/cpufeatures-0.2.17
@@ -1501,26 +1491,6 @@
   contents: '{"package": "d9c4f5dac5e15c24eb999c26181a6ca40b39fe946cbe4c263c7209467bc83af2",
     "files": {}}'
   dest: cargo/vendor/foldhash-0.1.5
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/fontconfig-parser/fontconfig-parser-0.5.8.crate
-  sha256: bbc773e24e02d4ddd8395fd30dc147524273a83e54e0f312d986ea30de5f5646
-  dest: cargo/vendor/fontconfig-parser-0.5.8
-- type: inline
-  contents: '{"package": "bbc773e24e02d4ddd8395fd30dc147524273a83e54e0f312d986ea30de5f5646",
-    "files": {}}'
-  dest: cargo/vendor/fontconfig-parser-0.5.8
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/fontdb/fontdb-0.23.0.crate
-  sha256: 457e789b3d1202543297a350643cf459f836cade38934e7a4cf6a39e7cde2905
-  dest: cargo/vendor/fontdb-0.23.0
-- type: inline
-  contents: '{"package": "457e789b3d1202543297a350643cf459f836cade38934e7a4cf6a39e7cde2905",
-    "files": {}}'
-  dest: cargo/vendor/fontdb-0.23.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
