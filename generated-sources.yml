@@ -1,7 +1,7 @@
 - type: git
   url: https://github.com/mq1/nod
-  commit: 4d3dab29ba5fab58e53c6be50f913f38caacea3c
-  dest: flatpak-cargo/git/nod-4d3dab2
+  commit: da1948b9d9dd1ae0b1fe2ddbdd7ab2ac756dfc84
+  dest: flatpak-cargo/git/nod-da1948b
 - type: archive
   archive-type: tar-gzip
   url: https://static.crates.io/crates/ab_glyph/ab_glyph-0.2.32.crate
@@ -574,13 +574,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/block-padding/block-padding-0.4.1.crate
-  sha256: 41d28ed5f5f65056148fd25e1a596b5b6d9e772270abf9a9085d7cbfbf26c563
-  dest: cargo/vendor/block-padding-0.4.1
+  url: https://static.crates.io/crates/block-padding/block-padding-0.4.0-rc.4.crate
+  sha256: 7e59c1aab3e6c5e56afe1b7e8650be9b5a791cb997bdea449194ae62e4bf8c73
+  dest: cargo/vendor/block-padding-0.4.0-rc.4
 - type: inline
-  contents: '{"package": "41d28ed5f5f65056148fd25e1a596b5b6d9e772270abf9a9085d7cbfbf26c563",
+  contents: '{"package": "7e59c1aab3e6c5e56afe1b7e8650be9b5a791cb997bdea449194ae62e4bf8c73",
     "files": {}}'
-  dest: cargo/vendor/block-padding-0.4.1
+  dest: cargo/vendor/block-padding-0.4.0-rc.4
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2474,13 +2474,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/inout/inout-0.2.1.crate
-  sha256: c7357b6e7aa75618c7864ebd0634b115a7218b0615f4cb1df33ac3eca23943d4
-  dest: cargo/vendor/inout-0.2.1
+  url: https://static.crates.io/crates/inout/inout-0.2.0-rc.6.crate
+  sha256: 1603f76010ff924b616c8f44815a42eb10fb0b93d308b41deaa8da6d4251fd4b
+  dest: cargo/vendor/inout-0.2.0-rc.6
 - type: inline
-  contents: '{"package": "c7357b6e7aa75618c7864ebd0634b115a7218b0615f4cb1df33ac3eca23943d4",
+  contents: '{"package": "1603f76010ff924b616c8f44815a42eb10fb0b93d308b41deaa8da6d4251fd4b",
     "files": {}}'
-  dest: cargo/vendor/inout-0.2.1
+  dest: cargo/vendor/inout-0.2.0-rc.6
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -3114,7 +3114,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/nod-4d3dab2/nod" "cargo/vendor/nod"
+  - cp -r --reflink=auto "flatpak-cargo/git/nod-da1948b/nod" "cargo/vendor/nod"
 - type: inline
   contents: '[package]
 
@@ -3162,13 +3162,13 @@
 
     [dependencies]
 
-    aes = "0.9.0-rc.0"
+    aes = "0.9.0-rc.1"
 
     base16ct = "0.2"
 
     bytes = "1.10"
 
-    cbc = "0.2.0-rc.0"
+    cbc = "0.2.0-rc.1"
 
     crc32fast = "1.5"
 
@@ -3192,6 +3192,8 @@
 
     tracing = "0.1"
 
+    block-padding = "=0.4.0-rc.4"
+
 
     [dependencies.adler]
 
@@ -3211,7 +3213,7 @@
 
     [dependencies.digest]
 
-    version = "0.11.0-rc.0"
+    version = "0.11.0-rc.3"
 
     default-features = false
 
@@ -3236,7 +3238,7 @@
 
     [dependencies.md-5]
 
-    version = "0.11.0-rc.0"
+    version = "0.11.0-rc.2"
 
     default-features = false
 
@@ -3257,7 +3259,7 @@
 
     [dependencies.sha1]
 
-    version = "0.11.0-rc.0"
+    version = "0.11.0-rc.2"
 
     default-features = false
 
