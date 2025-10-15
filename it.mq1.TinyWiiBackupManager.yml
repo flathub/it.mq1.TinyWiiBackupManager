@@ -4,7 +4,7 @@ runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.llvm20
+  - org.freedesktop.Sdk.Extension.llvm21
 command: TinyWiiBackupManager
 finish-args:
   - --share=network
@@ -18,14 +18,18 @@ modules:
   - name: TinyWiiBackupManager
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin
-      prepend-ld-library-path: /usr/lib/sdk/llvm20/lib
+      append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin
+      prepend-ld-library-path: /usr/lib/sdk/llvm21/lib
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
         CARGO_NET_OFFLINE: 'true'
+        CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang"
+        CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
+        CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER": "clang"
+        CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
-      - cargo build --offline --release --no-default-features --features "app-dir femtovg bundled-tls"
+      - cargo build --offline --release
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
       - install -Dm0644 assets/logo-small.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
@@ -33,6 +37,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mq1/TinyWiiBackupManager.git
-        tag: 3.0.2
-        commit: 00ff7cb91dd16b867165197ed8769c289b9034cc
+        tag: 3.0.3
+        commit: 6c09e9c49b3876d139cdf287be30249640ec0f23
       - generated-sources.yml
