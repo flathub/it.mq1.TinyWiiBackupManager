@@ -4544,6 +4544,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/sanitize-filename/sanitize-filename-0.7.0-beta.crate
+  sha256: 889fe19c32b4d5d42e588152757b960d1a5fca06303a583bcf3f9c920b8b1fc7
+  dest: cargo/vendor/sanitize-filename-0.7.0-beta
+- type: inline
+  contents: '{"package": "889fe19c32b4d5d42e588152757b960d1a5fca06303a583bcf3f9c920b8b1fc7",
+    "files": {}}'
+  dest: cargo/vendor/sanitize-filename-0.7.0-beta
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/schannel/schannel-0.1.28.crate
   sha256: 891d81b926048e76efe18581bf793546b4c0eaf8448d72be8de2bbee5fd166e1
   dest: cargo/vendor/schannel-0.1.28
