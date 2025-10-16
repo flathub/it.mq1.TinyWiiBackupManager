@@ -1,7 +1,7 @@
 - type: git
-  url: https://github.com/mq1/nod
-  commit: 3883521471ed24421e676eb1e948dbd399d059c6
-  dest: flatpak-cargo/git/nod-3883521
+  url: https://github.com/encounter/nod
+  commit: 5f3ea3c960b57442593b5cade2566de375e1a2e1
+  dest: flatpak-cargo/git/nod-5f3ea3c
 - type: archive
   archive-type: tar-gzip
   url: https://static.crates.io/crates/ab_glyph/ab_glyph-0.2.32.crate
@@ -2954,7 +2954,7 @@
   dest-filename: .cargo-checksum.json
 - type: shell
   commands:
-  - cp -r --reflink=auto "flatpak-cargo/git/nod-3883521/nod" "cargo/vendor/nod"
+  - cp -r --reflink=auto "flatpak-cargo/git/nod-5f3ea3c/nod" "cargo/vendor/nod"
 - type: inline
   contents: '[package]
 
@@ -6933,13 +6933,11 @@
     replace-with = "vendored-sources"
 
 
-    [source."https://github.com/mq1/nod"]
+    [source."https://github.com/encounter/nod"]
 
-    git = "https://github.com/mq1/nod"
+    git = "https://github.com/encounter/nod"
 
     replace-with = "vendored-sources"
-
-    branch = "strip-wbfs"
 
     '
   dest: cargo
