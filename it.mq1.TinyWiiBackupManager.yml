@@ -32,11 +32,11 @@ modules:
       - cargo build --offline --release
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
-      - install -Dm0644 assets/logo-small.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 assets/TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: git
         url: https://github.com/mq1/TinyWiiBackupManager.git
-        tag: 4.0.0
-        commit: 56abf7775c9134a6f45a0d54fd339056b59ff9b9
+        tag: 4.0.1
+        commit: d07d7fc316a6904b808e2b83f86efe31fc7315c5
       - generated-sources.yml
