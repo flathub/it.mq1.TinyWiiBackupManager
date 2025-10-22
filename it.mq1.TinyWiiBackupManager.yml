@@ -23,6 +23,7 @@ modules:
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
         CARGO_NET_OFFLINE: 'true'
+        CC: "clang"
         CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang"
         CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
         CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER": "clang"
@@ -37,6 +38,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mq1/TinyWiiBackupManager.git
-        tag: 4.0.1
-        commit: d07d7fc316a6904b808e2b83f86efe31fc7315c5
+        tag: 4.0.2
+        commit: 53b94dd32cb40b6bd828b9d04c705db618cf62de
       - generated-sources.yml
