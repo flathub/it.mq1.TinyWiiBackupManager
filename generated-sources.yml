@@ -4460,23 +4460,23 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/webpki-root-certs/webpki-root-certs-1.0.3.crate
-  sha256: 05d651ec480de84b762e7be71e6efa7461699c19d9e2c272c8d93455f567786e
-  dest: cargo/vendor/webpki-root-certs-1.0.3
+  url: https://static.crates.io/crates/webpki-root-certs/webpki-root-certs-1.0.4.crate
+  sha256: ee3e3b5f5e80bc89f30ce8d0343bf4e5f12341c51f3e26cbeecbc7c85443e85b
+  dest: cargo/vendor/webpki-root-certs-1.0.4
 - type: inline
-  contents: '{"package": "05d651ec480de84b762e7be71e6efa7461699c19d9e2c272c8d93455f567786e",
+  contents: '{"package": "ee3e3b5f5e80bc89f30ce8d0343bf4e5f12341c51f3e26cbeecbc7c85443e85b",
     "files": {}}'
-  dest: cargo/vendor/webpki-root-certs-1.0.3
+  dest: cargo/vendor/webpki-root-certs-1.0.4
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/webpki-roots/webpki-roots-1.0.3.crate
-  sha256: 32b130c0d2d49f8b6889abc456e795e82525204f27c42cf767cf0d7734e089b8
-  dest: cargo/vendor/webpki-roots-1.0.3
+  url: https://static.crates.io/crates/webpki-roots/webpki-roots-1.0.4.crate
+  sha256: b2878ef029c47c6e8cf779119f20fcf52bde7ad42a731b2a304bc221df17571e
+  dest: cargo/vendor/webpki-roots-1.0.4
 - type: inline
-  contents: '{"package": "32b130c0d2d49f8b6889abc456e795e82525204f27c42cf767cf0d7734e089b8",
+  contents: '{"package": "b2878ef029c47c6e8cf779119f20fcf52bde7ad42a731b2a304bc221df17571e",
     "files": {}}'
-  dest: cargo/vendor/webpki-roots-1.0.3
+  dest: cargo/vendor/webpki-roots-1.0.4
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
