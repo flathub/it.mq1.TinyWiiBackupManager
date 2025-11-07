@@ -38,6 +38,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mq1/TinyWiiBackupManager.git
-        tag: 4.2.4
-        commit: a15943c65b55fee92e5539e22e687974ace209bf
+        tag: 4.2.5
+        commit: 105760d03f506f93e88e11d8d5576f4c2f54bfcc
       - generated-sources.yml
