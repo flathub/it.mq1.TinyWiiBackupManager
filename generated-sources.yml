@@ -524,13 +524,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/block-buffer/block-buffer-0.11.0-rc.5.crate
-  sha256: e9ef36a6fcdb072aa548f3da057640ec10859eb4e91ddf526ee648d50c76a949
-  dest: cargo/vendor/block-buffer-0.11.0-rc.5
+  url: https://static.crates.io/crates/block-buffer/block-buffer-0.11.0.crate
+  sha256: 96eb4cdd6cf1b31d671e9efe75c5d1ec614776856cefbe109ca373554a6d514f
+  dest: cargo/vendor/block-buffer-0.11.0
 - type: inline
-  contents: '{"package": "e9ef36a6fcdb072aa548f3da057640ec10859eb4e91ddf526ee648d50c76a949",
+  contents: '{"package": "96eb4cdd6cf1b31d671e9efe75c5d1ec614776856cefbe109ca373554a6d514f",
     "files": {}}'
-  dest: cargo/vendor/block-buffer-0.11.0-rc.5
+  dest: cargo/vendor/block-buffer-0.11.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2970,13 +2970,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/openssl/openssl-0.10.74.crate
-  sha256: 24ad14dd45412269e1a30f52ad8f0664f0f4f4a89ee8fe28c3b3527021ebb654
-  dest: cargo/vendor/openssl-0.10.74
+  url: https://static.crates.io/crates/openssl/openssl-0.10.75.crate
+  sha256: 08838db121398ad17ab8531ce9de97b244589089e290a384c900cb9ff7434328
+  dest: cargo/vendor/openssl-0.10.75
 - type: inline
-  contents: '{"package": "24ad14dd45412269e1a30f52ad8f0664f0f4f4a89ee8fe28c3b3527021ebb654",
+  contents: '{"package": "08838db121398ad17ab8531ce9de97b244589089e290a384c900cb9ff7434328",
     "files": {}}'
-  dest: cargo/vendor/openssl-0.10.74
+  dest: cargo/vendor/openssl-0.10.75
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -3000,13 +3000,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/openssl-sys/openssl-sys-0.9.110.crate
-  sha256: 0a9f0075ba3c21b09f8e8b2026584b1d18d49388648f2fbbf3c97ea8deced8e2
-  dest: cargo/vendor/openssl-sys-0.9.110
+  url: https://static.crates.io/crates/openssl-sys/openssl-sys-0.9.111.crate
+  sha256: 82cab2d520aa75e3c58898289429321eb788c3106963d0dc886ec7a5f4adc321
+  dest: cargo/vendor/openssl-sys-0.9.111
 - type: inline
-  contents: '{"package": "0a9f0075ba3c21b09f8e8b2026584b1d18d49388648f2fbbf3c97ea8deced8e2",
+  contents: '{"package": "82cab2d520aa75e3c58898289429321eb788c3106963d0dc886ec7a5f4adc321",
     "files": {}}'
-  dest: cargo/vendor/openssl-sys-0.9.110
+  dest: cargo/vendor/openssl-sys-0.9.111
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -3970,13 +3970,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/syn/syn-2.0.109.crate
-  sha256: 2f17c7e013e88258aa9543dcbe81aca68a667a9ac37cd69c9fbc07858bfe0e2f
-  dest: cargo/vendor/syn-2.0.109
+  url: https://static.crates.io/crates/syn/syn-2.0.110.crate
+  sha256: a99801b5bd34ede4cf3fc688c5919368fea4e4814a4664359503e6015b280aea
+  dest: cargo/vendor/syn-2.0.110
 - type: inline
-  contents: '{"package": "2f17c7e013e88258aa9543dcbe81aca68a667a9ac37cd69c9fbc07858bfe0e2f",
+  contents: '{"package": "a99801b5bd34ede4cf3fc688c5919368fea4e4814a4664359503e6015b280aea",
     "files": {}}'
-  dest: cargo/vendor/syn-2.0.109
+  dest: cargo/vendor/syn-2.0.110
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -4590,13 +4590,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/weezl/weezl-0.1.10.crate
-  sha256: a751b3277700db47d3e574514de2eced5e54dc8a5436a3bf7a0b248b2cee16f3
-  dest: cargo/vendor/weezl-0.1.10
+  url: https://static.crates.io/crates/weezl/weezl-0.1.11.crate
+  sha256: 009936b22a61d342859b5f0ea64681cbb35a358ab548e2a44a8cf0dac2d980b8
+  dest: cargo/vendor/weezl-0.1.11
 - type: inline
-  contents: '{"package": "a751b3277700db47d3e574514de2eced5e54dc8a5436a3bf7a0b248b2cee16f3",
+  contents: '{"package": "009936b22a61d342859b5f0ea64681cbb35a358ab548e2a44a8cf0dac2d980b8",
     "files": {}}'
-  dest: cargo/vendor/weezl-0.1.10
+  dest: cargo/vendor/weezl-0.1.11
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
