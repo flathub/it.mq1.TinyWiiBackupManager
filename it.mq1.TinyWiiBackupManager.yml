@@ -25,7 +25,7 @@ modules:
         CARGO_NET_OFFLINE: 'true'
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
-      - cargo build --offline --release --no-default-features --features "app-dir native-tls"
+      - cargo build --offline --release --no-default-features --features "native-tls"
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
       - install -Dm0644 assets/TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png
@@ -33,6 +33,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/mq1/TinyWiiBackupManager.git
-        tag: 4.3.4
-        commit: b25df45ada808c543002aa80aa37519e27531456
+        tag: 4.3.5
+        commit: 6c8681b4f8971ad3d1a371ca76fb21ef088227a6
       - generated-sources.yml
