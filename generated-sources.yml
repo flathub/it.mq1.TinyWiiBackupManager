@@ -944,6 +944,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/deranged/deranged-0.5.5.crate
+  sha256: ececcb659e7ba858fb4f10388c250a7252eb0a27373f1a72b8748afdd248e587
+  dest: cargo/vendor/deranged-0.5.5
+- type: inline
+  contents: '{"package": "ececcb659e7ba858fb4f10388c250a7252eb0a27373f1a72b8748afdd248e587",
+    "files": {}}'
+  dest: cargo/vendor/deranged-0.5.5
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/derive_arbitrary/derive_arbitrary-1.4.2.crate
   sha256: 1e567bd82dcff979e4b03460c307b3cdc9e96fde3d73bed1496d2bc75d9dd62a
   dest: cargo/vendor/derive_arbitrary-1.4.2
@@ -1970,13 +1980,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/hashbrown/hashbrown-0.16.0.crate
-  sha256: 5419bdc4f6a9207fbeba6d11b604d481addf78ecd10c11ad51e76c2f6482748d
-  dest: cargo/vendor/hashbrown-0.16.0
+  url: https://static.crates.io/crates/hashbrown/hashbrown-0.16.1.crate
+  sha256: 841d1cc9bed7f9236f321df977030373f4a4163ae1a7dbfe1a51a2c1a51d9100
+  dest: cargo/vendor/hashbrown-0.16.1
 - type: inline
-  contents: '{"package": "5419bdc4f6a9207fbeba6d11b604d481addf78ecd10c11ad51e76c2f6482748d",
+  contents: '{"package": "841d1cc9bed7f9236f321df977030373f4a4163ae1a7dbfe1a51a2c1a51d9100",
     "files": {}}'
-  dest: cargo/vendor/hashbrown-0.16.0
+  dest: cargo/vendor/hashbrown-0.16.1
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -2650,6 +2660,16 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
+  url: https://static.crates.io/crates/num-conv/num-conv-0.1.0.crate
+  sha256: 51d515d32fb182ee37cda2ccdcb92950d6a3c2893aa280e540671c2cd0f3b1d9
+  dest: cargo/vendor/num-conv-0.1.0
+- type: inline
+  contents: '{"package": "51d515d32fb182ee37cda2ccdcb92950d6a3c2893aa280e540671c2cd0f3b1d9",
+    "files": {}}'
+  dest: cargo/vendor/num-conv-0.1.0
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
   url: https://static.crates.io/crates/num-traits/num-traits-0.2.19.crate
   sha256: 071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841
   dest: cargo/vendor/num-traits-0.2.19
@@ -3307,6 +3327,16 @@
   contents: '{"package": "b73949432f5e2a09657003c25bca5e19a0e9c84f8058ca374f49e0ebe605af77",
     "files": {}}'
   dest: cargo/vendor/potential_utf-0.1.4
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/powerfmt/powerfmt-0.2.0.crate
+  sha256: 439ee305def115ba05938db6eb1644ff94165c5ab5e9420d1c1bcedbba909391
+  dest: cargo/vendor/powerfmt-0.2.0
+- type: inline
+  contents: '{"package": "439ee305def115ba05938db6eb1644ff94165c5ab5e9420d1c1bcedbba909391",
+    "files": {}}'
+  dest: cargo/vendor/powerfmt-0.2.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -4067,6 +4097,36 @@
   contents: '{"package": "af9605de7fee8d9551863fd692cce7637f548dbd9db9180fcc07ccc6d26c336f",
     "files": {}}'
   dest: cargo/vendor/tiff-0.10.3
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/time/time-0.3.44.crate
+  sha256: 91e7d9e3bb61134e77bde20dd4825b97c010155709965fedf0f49bb138e52a9d
+  dest: cargo/vendor/time-0.3.44
+- type: inline
+  contents: '{"package": "91e7d9e3bb61134e77bde20dd4825b97c010155709965fedf0f49bb138e52a9d",
+    "files": {}}'
+  dest: cargo/vendor/time-0.3.44
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/time-core/time-core-0.1.6.crate
+  sha256: 40868e7c1d2f0b8d73e4a8c7f0ff63af4f6d19be117e90bd73eb1d62cf831c6b
+  dest: cargo/vendor/time-core-0.1.6
+- type: inline
+  contents: '{"package": "40868e7c1d2f0b8d73e4a8c7f0ff63af4f6d19be117e90bd73eb1d62cf831c6b",
+    "files": {}}'
+  dest: cargo/vendor/time-core-0.1.6
+  dest-filename: .cargo-checksum.json
+- type: archive
+  archive-type: tar-gzip
+  url: https://static.crates.io/crates/time-macros/time-macros-0.2.24.crate
+  sha256: 30cfb0125f12d9c277f35663a0a33f8c30190f4e4574868a330595412d34ebf3
+  dest: cargo/vendor/time-macros-0.2.24
+- type: inline
+  contents: '{"package": "30cfb0125f12d9c277f35663a0a33f8c30190f4e4574868a330595412d34ebf3",
+    "files": {}}'
+  dest: cargo/vendor/time-macros-0.2.24
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -5410,23 +5470,23 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/zerocopy/zerocopy-0.8.27.crate
-  sha256: 0894878a5fa3edfd6da3f88c4805f4c8558e2b996227a3d864f47fe11e38282c
-  dest: cargo/vendor/zerocopy-0.8.27
+  url: https://static.crates.io/crates/zerocopy/zerocopy-0.8.28.crate
+  sha256: 43fa6694ed34d6e57407afbccdeecfa268c470a7d2a5b0cf49ce9fcc345afb90
+  dest: cargo/vendor/zerocopy-0.8.28
 - type: inline
-  contents: '{"package": "0894878a5fa3edfd6da3f88c4805f4c8558e2b996227a3d864f47fe11e38282c",
+  contents: '{"package": "43fa6694ed34d6e57407afbccdeecfa268c470a7d2a5b0cf49ce9fcc345afb90",
     "files": {}}'
-  dest: cargo/vendor/zerocopy-0.8.27
+  dest: cargo/vendor/zerocopy-0.8.28
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.27.crate
-  sha256: 88d2b8d9c68ad2b9e4340d7832716a4d21a22a1154777ad56ea55c51a9cf3831
-  dest: cargo/vendor/zerocopy-derive-0.8.27
+  url: https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.28.crate
+  sha256: c640b22cd9817fae95be82f0d2f90b11f7605f6c319d16705c459b27ac2cbc26
+  dest: cargo/vendor/zerocopy-derive-0.8.28
 - type: inline
-  contents: '{"package": "88d2b8d9c68ad2b9e4340d7832716a4d21a22a1154777ad56ea55c51a9cf3831",
+  contents: '{"package": "c640b22cd9817fae95be82f0d2f90b11f7605f6c319d16705c459b27ac2cbc26",
     "files": {}}'
-  dest: cargo/vendor/zerocopy-derive-0.8.27
+  dest: cargo/vendor/zerocopy-derive-0.8.28
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
