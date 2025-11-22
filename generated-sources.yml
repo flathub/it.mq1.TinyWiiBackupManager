@@ -1370,16 +1370,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/egui-theme-switch/egui-theme-switch-0.5.0.crate
-  sha256: 183847e1b40cdf690a596578d432874d654a8abd43686a53242a13ea1d6ed56a
-  dest: cargo/vendor/egui-theme-switch-0.5.0
-- type: inline
-  contents: '{"package": "183847e1b40cdf690a596578d432874d654a8abd43686a53242a13ea1d6ed56a",
-    "files": {}}'
-  dest: cargo/vendor/egui-theme-switch-0.5.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/egui-wgpu/egui-wgpu-0.33.2.crate
   sha256: acdaac35a6e0ff458aaa5776b2bda578e38334a9d1258f7795042a70372745b7
   dest: cargo/vendor/egui-wgpu-0.33.2
