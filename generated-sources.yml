@@ -1640,16 +1640,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/fnv/fnv-1.0.7.crate
-  sha256: 3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1
-  dest: cargo/vendor/fnv-1.0.7
-- type: inline
-  contents: '{"package": "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1",
-    "files": {}}'
-  dest: cargo/vendor/fnv-1.0.7
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/foldhash/foldhash-0.1.5.crate
   sha256: d9c4f5dac5e15c24eb999c26181a6ca40b39fe946cbe4c263c7209467bc83af2
   dest: cargo/vendor/foldhash-0.1.5
@@ -2020,13 +2010,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/http/http-1.3.1.crate
-  sha256: f4a85d31aea989eead29a3aaf9e1115a180df8282431156e533de47660892565
-  dest: cargo/vendor/http-1.3.1
+  url: https://static.crates.io/crates/http/http-1.4.0.crate
+  sha256: e3ba2a386d7f85a81f119ad7498ebe444d2e22c2af0b86b069416ace48b3311a
+  dest: cargo/vendor/http-1.4.0
 - type: inline
-  contents: '{"package": "f4a85d31aea989eead29a3aaf9e1115a180df8282431156e533de47660892565",
+  contents: '{"package": "e3ba2a386d7f85a81f119ad7498ebe444d2e22c2af0b86b069416ace48b3311a",
     "files": {}}'
-  dest: cargo/vendor/http-1.3.1
+  dest: cargo/vendor/http-1.4.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -5460,23 +5450,23 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/zerocopy/zerocopy-0.8.28.crate
-  sha256: 43fa6694ed34d6e57407afbccdeecfa268c470a7d2a5b0cf49ce9fcc345afb90
-  dest: cargo/vendor/zerocopy-0.8.28
+  url: https://static.crates.io/crates/zerocopy/zerocopy-0.8.30.crate
+  sha256: 4ea879c944afe8a2b25fef16bb4ba234f47c694565e97383b36f3a878219065c
+  dest: cargo/vendor/zerocopy-0.8.30
 - type: inline
-  contents: '{"package": "43fa6694ed34d6e57407afbccdeecfa268c470a7d2a5b0cf49ce9fcc345afb90",
+  contents: '{"package": "4ea879c944afe8a2b25fef16bb4ba234f47c694565e97383b36f3a878219065c",
     "files": {}}'
-  dest: cargo/vendor/zerocopy-0.8.28
+  dest: cargo/vendor/zerocopy-0.8.30
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.28.crate
-  sha256: c640b22cd9817fae95be82f0d2f90b11f7605f6c319d16705c459b27ac2cbc26
-  dest: cargo/vendor/zerocopy-derive-0.8.28
+  url: https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.30.crate
+  sha256: cf955aa904d6040f70dc8e9384444cb1030aed272ba3cb09bbc4ab9e7c1f34f5
+  dest: cargo/vendor/zerocopy-derive-0.8.30
 - type: inline
-  contents: '{"package": "c640b22cd9817fae95be82f0d2f90b11f7605f6c319d16705c459b27ac2cbc26",
+  contents: '{"package": "cf955aa904d6040f70dc8e9384444cb1030aed272ba3cb09bbc4ab9e7c1f34f5",
     "files": {}}'
-  dest: cargo/vendor/zerocopy-derive-0.8.28
+  dest: cargo/vendor/zerocopy-derive-0.8.30
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
