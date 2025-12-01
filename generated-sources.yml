@@ -5460,23 +5460,23 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/zerocopy/zerocopy-0.8.30.crate
-  sha256: 4ea879c944afe8a2b25fef16bb4ba234f47c694565e97383b36f3a878219065c
-  dest: cargo/vendor/zerocopy-0.8.30
+  url: https://static.crates.io/crates/zerocopy/zerocopy-0.8.31.crate
+  sha256: fd74ec98b9250adb3ca554bdde269adf631549f51d8a8f8f0a10b50f1cb298c3
+  dest: cargo/vendor/zerocopy-0.8.31
 - type: inline
-  contents: '{"package": "4ea879c944afe8a2b25fef16bb4ba234f47c694565e97383b36f3a878219065c",
+  contents: '{"package": "fd74ec98b9250adb3ca554bdde269adf631549f51d8a8f8f0a10b50f1cb298c3",
     "files": {}}'
-  dest: cargo/vendor/zerocopy-0.8.30
+  dest: cargo/vendor/zerocopy-0.8.31
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.30.crate
-  sha256: cf955aa904d6040f70dc8e9384444cb1030aed272ba3cb09bbc4ab9e7c1f34f5
-  dest: cargo/vendor/zerocopy-derive-0.8.30
+  url: https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.31.crate
+  sha256: d8a8d209fdf45cf5138cbb5a506f6b52522a25afccc534d1475dad8e31105c6a
+  dest: cargo/vendor/zerocopy-derive-0.8.31
 - type: inline
-  contents: '{"package": "cf955aa904d6040f70dc8e9384444cb1030aed272ba3cb09bbc4ab9e7c1f34f5",
+  contents: '{"package": "d8a8d209fdf45cf5138cbb5a506f6b52522a25afccc534d1475dad8e31105c6a",
     "files": {}}'
-  dest: cargo/vendor/zerocopy-derive-0.8.30
+  dest: cargo/vendor/zerocopy-derive-0.8.31
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -5655,7 +5655,7 @@
 
     replace-with = "vendored-sources"
 
-    branch = "fix-win-i686"
+    tag = "v0.12.0-fix"
 
     '
   dest: cargo
