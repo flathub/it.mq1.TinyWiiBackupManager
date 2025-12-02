@@ -2360,16 +2360,6 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/libz-rs-sys/libz-rs-sys-0.5.2.crate
-  sha256: 840db8cf39d9ec4dd794376f38acc40d0fc65eec2a8f484f7fd375b84602becd
-  dest: cargo/vendor/libz-rs-sys-0.5.2
-- type: inline
-  contents: '{"package": "840db8cf39d9ec4dd794376f38acc40d0fc65eec2a8f484f7fd375b84602becd",
-    "files": {}}'
-  dest: cargo/vendor/libz-rs-sys-0.5.2
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
   url: https://static.crates.io/crates/linux-raw-sys/linux-raw-sys-0.4.15.crate
   sha256: d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab
   dest: cargo/vendor/linux-raw-sys-0.4.15
@@ -4370,13 +4360,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/uuid/uuid-1.18.1.crate
-  sha256: 2f87b8aa10b915a06587d0dec516c282ff295b475d94abf425d62b57710070a2
-  dest: cargo/vendor/uuid-1.18.1
+  url: https://static.crates.io/crates/uuid/uuid-1.19.0.crate
+  sha256: e2e054861b4bd027cd373e18e8d8d8e6548085000e41290d95ce0c373a654b4a
+  dest: cargo/vendor/uuid-1.19.0
 - type: inline
-  contents: '{"package": "2f87b8aa10b915a06587d0dec516c282ff295b475d94abf425d62b57710070a2",
+  contents: '{"package": "e2e054861b4bd027cd373e18e8d8d8e6548085000e41290d95ce0c373a654b4a",
     "files": {}}'
-  dest: cargo/vendor/uuid-1.18.1
+  dest: cargo/vendor/uuid-1.19.0
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
@@ -5547,16 +5537,6 @@
   contents: '{"package": "eb2a05c7c36fde6c09b08576c9f7fb4cda705990f73b58fe011abf7dfb24168b",
     "files": {}}'
   dest: cargo/vendor/zip-6.0.0
-  dest-filename: .cargo-checksum.json
-- type: archive
-  archive-type: tar-gzip
-  url: https://static.crates.io/crates/zlib-rs/zlib-rs-0.5.2.crate
-  sha256: 2f06ae92f42f5e5c42443fd094f245eb656abf56dd7cce9b8b263236565e00f2
-  dest: cargo/vendor/zlib-rs-0.5.2
-- type: inline
-  contents: '{"package": "2f06ae92f42f5e5c42443fd094f245eb656abf56dd7cce9b8b263236565e00f2",
-    "files": {}}'
-  dest: cargo/vendor/zlib-rs-0.5.2
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
