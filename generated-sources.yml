@@ -3677,13 +3677,13 @@
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
-  url: https://static.crates.io/crates/simd-adler32/simd-adler32-0.3.7.crate
-  sha256: d66dc143e6b11c1eddc06d5c423cfc97062865baf299914ab64caa38182078fe
-  dest: cargo/vendor/simd-adler32-0.3.7
+  url: https://static.crates.io/crates/simd-adler32/simd-adler32-0.3.8.crate
+  sha256: e320a6c5ad31d271ad523dcf3ad13e2767ad8b1cb8f047f75a8aeaf8da139da2
+  dest: cargo/vendor/simd-adler32-0.3.8
 - type: inline
-  contents: '{"package": "d66dc143e6b11c1eddc06d5c423cfc97062865baf299914ab64caa38182078fe",
+  contents: '{"package": "e320a6c5ad31d271ad523dcf3ad13e2767ad8b1cb8f047f75a8aeaf8da139da2",
     "files": {}}'
-  dest: cargo/vendor/simd-adler32-0.3.7
+  dest: cargo/vendor/simd-adler32-0.3.8
   dest-filename: .cargo-checksum.json
 - type: archive
   archive-type: tar-gzip
