@@ -4,6 +4,7 @@ runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
+  - org.freedesktop.Sdk.Extension.llvm21
 command: TinyWiiBackupManager
 finish-args:
   - --share=network
@@ -17,10 +18,15 @@ modules:
   - name: TinyWiiBackupManager
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/rust-stable/bin
+      append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
-        CARGO_NET_OFFLINE: 'true'
+        CARGO_NET_OFFLINE: "true"
+        RUSTFLAGS: -Clinker=clang -Clink-arg=-fuse-ld=lld -Clinker-plugin-lto
+        CC: clang
+        CXX: clang++
+        CFLAGS: -flto -O3 -pipe
+        CXXFLAGS: -flto -O3 -pipe
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml --verbose
       - cargo build --offline --release --locked
