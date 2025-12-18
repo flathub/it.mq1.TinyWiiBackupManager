@@ -25,8 +25,8 @@ modules:
         RUSTFLAGS: -Clinker=clang -Clink-arg=-fuse-ld=lld -Clinker-plugin-lto
         CC: clang
         CXX: clang++
-        CFLAGS: -flto -O3 -pipe
-        CXXFLAGS: -flto -O3 -pipe
+        CFLAGS: -flto -O3
+        CXXFLAGS: -flto -O3
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml --verbose
       - cargo build --offline --release --locked
@@ -36,6 +36,6 @@ modules:
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v4.9.4+1.tar.gz
-        sha256: ad0d9f7d8887d3239a843e5347f5c35fe440f5f4cff66d1724b6dbf9e4c81fd0
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v4.9.5.tar.gz
+        sha256: 7f66cdd2d22e964d603ad028bf0deb07b41c7aee5f24f426325c2e58c209bba2
       - cargo-sources.json
