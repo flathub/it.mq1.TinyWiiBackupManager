@@ -21,7 +21,6 @@ modules:
       append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
-        CARGO_NET_OFFLINE: "true"
         RUSTFLAGS: -Clinker=clang -Clink-arg=-fuse-ld=lld -Clinker-plugin-lto
         CC: clang
         CXX: clang++
@@ -29,13 +28,13 @@ modules:
         CXXFLAGS: -flto -O3
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml --verbose
-      - cargo build --offline --release --locked
+      - cargo --offline build --features "csd-freetype" --release --verbose --locked
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 assets/TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v4.9.10.tar.gz
-        sha256: f75df5e609767c0ab317bf0e69431dacc1d2002ab0c34ea75bfbb2fbe3baac0a
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v4.9.11.tar.gz
+        sha256: 3e571020f8f9242468d3b0d424b3befdcd7b2c8afae099b18992bb23a5de1046
       - cargo-sources.json
