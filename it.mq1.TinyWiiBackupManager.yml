@@ -35,6 +35,6 @@ modules:
       - install -Dm0644 assets/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v4.9.11.tar.gz
-        sha256: 3e571020f8f9242468d3b0d424b3befdcd7b2c8afae099b18992bb23a5de1046
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v4.9.12.tar.gz
+        sha256: 4cbcdc0cb40274d668cb9ecc7c7b37c00ae2e8bc42d232244903ccee7c9bf824
       - cargo-sources.json
