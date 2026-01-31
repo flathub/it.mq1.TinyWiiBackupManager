@@ -31,7 +31,7 @@ modules:
         CXXFLAGS: -O3 -flto
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
-      - cargo --offline build --release --locked
+      - cargo --offline build --release --features "tiny-skia" --locked
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 package/linux/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 package/linux/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
@@ -44,6 +44,6 @@ modules:
       - install -Dm0644 package/linux/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.0.0+2.tar.gz
-        sha256: 891706fff05fb159921d439e97c6ea38b8a2a5e839cb4d45b5c9bbf812e1d910
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.0.1.tar.gz
+        sha256: 49158e63b7b448325ff5270bc1c0d2067e2e53714796ac01b568a2e9e6a6e118
       - cargo-sources.json
