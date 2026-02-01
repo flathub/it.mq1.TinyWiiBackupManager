@@ -1,5 +1,11 @@
 [
     {
+        "type": "git",
+        "url": "https://github.com/mq1/nod",
+        "commit": "b67355b39ee7b42901fa8f5ceebdbf66f2f685d7",
+        "dest": "flatpak-cargo/git/nod-b67355b"
+    },
+    {
         "type": "archive",
         "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/ab_glyph/ab_glyph-0.2.32.crate",
@@ -2938,16 +2944,21 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/nod/nod-2.0.0-alpha.4.crate",
-        "sha256": "3a34b1987a43c535675ddd346523e70827646081caef9b1c2e74e0351a34e3cc",
-        "dest": "cargo/vendor/nod-2.0.0-alpha.4"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/nod-b67355b/nod\" \"cargo/vendor/nod\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"3a34b1987a43c535675ddd346523e70827646081caef9b1c2e74e0351a34e3cc\", \"files\": {}}",
-        "dest": "cargo/vendor/nod-2.0.0-alpha.4",
+        "contents": "[package]\nname = \"nod\"\nversion = \"2.0.0-alpha.4\"\nedition = \"2024\"\nrust-version = \"1.85\"\nauthors = [ \"Luke Street <luke@street.dev>\",]\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/encounter/nod\"\ndocumentation = \"https://docs.rs/nod\"\nreadme = \"../README.md\"\ndescription = \"Library for reading and writing GameCube and Wii disc images.\\n\"\nkeywords = [ \"gamecube\", \"wii\", \"iso\", \"wbfs\", \"rvz\",]\ncategories = [ \"command-line-utilities\", \"parser-implementations\",]\n\n[features]\ndefault = [ \"compress-bzip2\", \"compress-lzma\", \"compress-zlib\", \"compress-zstd\", \"threading\",]\ncompress-bzip2 = [ \"bzip2\",]\ncompress-lzma = [ \"liblzma\", \"liblzma-sys\",]\ncompress-zlib = [ \"adler2\", \"miniz_oxide\",]\ncompress-zstd = [ \"zstd\", \"zstd-safe\",]\nopenssl = [ \"dep:openssl\",]\nopenssl-vendored = [ \"openssl\", \"openssl/vendored\",]\nthreading = [ \"dep:crossbeam-channel\", \"dep:crossbeam-utils\",]\n\n[dependencies]\naes = \"0.9.0-rc.1\"\ncrypto-common = \"=0.2.0-rc.13\"\nbase16ct = \"0.3\"\nblock-padding = \"=0.4.0-rc.4\"\nbytes = \"1.10\"\ncbc = \"0.2.0-rc.1\"\ncrc32fast = \"1.5\"\ndyn-clone = \"1.0\"\nencoding_rs = \"0.8\"\nitertools = \"0.14\"\nlru = \"0.16\"\npolonius-the-crab = \"0.4\"\nsimple_moving_average = \"1.0\"\nthiserror = \"2.0\"\ntracing = \"0.1\"\n\n[dependencies.adler2]\nversion = \"2.0\"\noptional = true\n\n[dependencies.bzip2]\nversion = \"0.6\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.crossbeam-channel]\nversion = \"0.5\"\noptional = true\n\n[dependencies.crossbeam-utils]\nversion = \"0.8\"\noptional = true\n\n[dependencies.digest]\nversion = \"0.11.0-rc.3\"\ndefault-features = false\n\n[dependencies.liblzma]\nversion = \"0.4\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.liblzma-sys]\nversion = \"0.4\"\nfeatures = [ \"static\",]\noptional = true\n\n[dependencies.md-5]\nversion = \"0.11.0-rc.2\"\ndefault-features = false\n\n[dependencies.miniz_oxide]\nversion = \"0.8\"\noptional = true\n\n[dependencies.openssl]\nversion = \"0.10\"\noptional = true\n\n[dependencies.sha1]\nversion = \"0.11.0-rc.2\"\ndefault-features = false\n\n[dependencies.xxhash-rust]\nversion = \"0.8\"\nfeatures = [ \"xxh64\",]\n\n[dependencies.zerocopy]\nversion = \"0.8\"\nfeatures = [ \"alloc\", \"derive\",]\n\n[dependencies.zstd]\nversion = \"0.13\"\noptional = true\ndefault-features = false\n\n[dependencies.zstd-safe]\nversion = \"7.2\"\noptional = true\ndefault-features = false\n",
+        "dest": "cargo/vendor/nod",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/nod",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3785,27 +3796,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/portable-atomic/portable-atomic-1.13.0.crate",
-        "sha256": "f89776e4d69bb58bc6993e99ffa1d11f228b839984854c7daeb5d37f87cbe950",
-        "dest": "cargo/vendor/portable-atomic-1.13.0"
+        "url": "https://static.crates.io/crates/portable-atomic/portable-atomic-1.13.1.crate",
+        "sha256": "c33a9471896f1c69cecef8d20cbe2f7accd12527ce60845ff44c153bb2a21b49",
+        "dest": "cargo/vendor/portable-atomic-1.13.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f89776e4d69bb58bc6993e99ffa1d11f228b839984854c7daeb5d37f87cbe950\", \"files\": {}}",
-        "dest": "cargo/vendor/portable-atomic-1.13.0",
+        "contents": "{\"package\": \"c33a9471896f1c69cecef8d20cbe2f7accd12527ce60845ff44c153bb2a21b49\", \"files\": {}}",
+        "dest": "cargo/vendor/portable-atomic-1.13.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/portable-atomic-util/portable-atomic-util-0.2.4.crate",
-        "sha256": "d8a2f0d8d040d7848a709caf78912debcc3f33ee4b3cac47d73d1e1069e83507",
-        "dest": "cargo/vendor/portable-atomic-util-0.2.4"
+        "url": "https://static.crates.io/crates/portable-atomic-util/portable-atomic-util-0.2.5.crate",
+        "sha256": "7a9db96d7fa8782dd8c15ce32ffe8680bbd1e978a43bf51a34d39483540495f5",
+        "dest": "cargo/vendor/portable-atomic-util-0.2.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"d8a2f0d8d040d7848a709caf78912debcc3f33ee4b3cac47d73d1e1069e83507\", \"files\": {}}",
-        "dest": "cargo/vendor/portable-atomic-util-0.2.4",
+        "contents": "{\"package\": \"7a9db96d7fa8782dd8c15ce32ffe8680bbd1e978a43bf51a34d39483540495f5\", \"files\": {}}",
+        "dest": "cargo/vendor/portable-atomic-util-0.2.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -4604,14 +4615,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/slab/slab-0.4.11.crate",
-        "sha256": "7a2ae44ef20feb57a68b23d846850f861394c2e02dc425a50098ae8c90267589",
-        "dest": "cargo/vendor/slab-0.4.11"
+        "url": "https://static.crates.io/crates/slab/slab-0.4.12.crate",
+        "sha256": "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5",
+        "dest": "cargo/vendor/slab-0.4.12"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"7a2ae44ef20feb57a68b23d846850f861394c2e02dc425a50098ae8c90267589\", \"files\": {}}",
-        "dest": "cargo/vendor/slab-0.4.11",
+        "contents": "{\"package\": \"0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5\", \"files\": {}}",
+        "dest": "cargo/vendor/slab-0.4.12",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6657,7 +6668,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/mq1/nod\"]\ngit = \"https://github.com/mq1/nod\"\nreplace-with = \"vendored-sources\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
