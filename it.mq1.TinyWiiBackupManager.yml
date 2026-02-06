@@ -32,9 +32,16 @@ modules:
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --release --features "tiny-skia" --locked
-      - cp -r package/linux/usr/share ${FLATPAK_DEST}/
-      - chmod -R 644 ${FLATPAK_DEST}/share
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/usr/share/applications/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
+      - install -Dm0644 package/linux/usr/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
         url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.0.tar.gz
