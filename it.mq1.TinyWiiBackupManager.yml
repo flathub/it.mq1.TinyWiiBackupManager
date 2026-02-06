@@ -32,18 +32,11 @@ modules:
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --release --features "tiny-skia" --locked
+      - cp -r package/linux/usr/share ${FLATPAK_DEST}/
+      - chmod -R 644 ${FLATPAK_DEST}/usr/share
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
-      - install -Dm0644 package/linux/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
-      - install -Dm0644 package/linux/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.0.2.tar.gz
-        sha256: c72476101496eda39684f6d13790883a8364213077d03c3bc9d34f0a286567d3
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.0.tar.gz
+        sha256: d0956c85f05508b1c522971043049756df6d826c72310ea7276099b82b8946fc
       - cargo-sources.json
