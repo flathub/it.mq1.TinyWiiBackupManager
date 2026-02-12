@@ -4,7 +4,6 @@ runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.llvm21
 command: TinyWiiBackupManager
 finish-args:
   - --share=network
@@ -18,17 +17,10 @@ modules:
   - name: TinyWiiBackupManager
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin
+      append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
-        RUSTFLAGS: -C linker-plugin-lto -C link-arg=-fuse-ld=lld
-        CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER: clang
-        CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: clang
-        CC: clang
-        CXX: clang++
-        AR: llvm-ar
-        CFLAGS: -O3 -flto
-        CXXFLAGS: -O3 -flto
+        CARGO_NET_OFFLINE: 'true'
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --profile release-lto --features linux-flatpak --locked
@@ -44,6 +36,6 @@ modules:
       - install -Dm0644 package/linux/usr/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.5.tar.gz
-        sha256: e18c5f18ae6328160ec77d0c3856f577dd54e73ea9318e83b043cd2e21a6afdd
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.6.tar.gz
+        sha256: d1023396e7dbb93639dadb911efb91d10280414b484a089fa1db67b62cb9ea62
       - cargo-sources.json
