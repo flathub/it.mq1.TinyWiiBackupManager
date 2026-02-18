@@ -21,7 +21,7 @@ modules:
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
         CARGO_NET_OFFLINE: 'true'
-        RUSTFLAGS: -C link-arg=-fuse-ld=mold
+        #RUSTFLAGS: -C link-arg=-fuse-ld=mold
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --profile release-lto --features linux-flatpak --locked
