@@ -21,6 +21,7 @@ modules:
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
         CARGO_NET_OFFLINE: 'true'
+        RUSTFLAGS: -C link-arg=-fuse-ld=mold
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --profile release-lto --features linux-flatpak --locked
@@ -36,6 +37,6 @@ modules:
       - install -Dm0644 package/linux/usr/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.8.tar.gz
-        sha256: d86d4b52d5e94cd5ebd038080dcccd02c69689cb30bac4befe017482fa0f91b5
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.9.tar.gz
+        sha256: 3487dcd61c188e70287c95b9b0fd6bc201b386f39eeac8f1e8998f7d0ee55a61
       - cargo-sources.json
