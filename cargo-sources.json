@@ -476,6 +476,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/base64/base64-0.21.7.crate",
+        "sha256": "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567",
+        "dest": "cargo/vendor/base64-0.21.7"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567\", \"files\": {}}",
+        "dest": "cargo/vendor/base64-0.21.7",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/base64/base64-0.22.1.crate",
         "sha256": "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6",
         "dest": "cargo/vendor/base64-0.22.1"
@@ -3887,6 +3900,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/openssl-probe/openssl-probe-0.1.6.crate",
+        "sha256": "d05e27ee213611ffe7d6348b942e8f942b37114c00cc03cec254295a4a17852e",
+        "dest": "cargo/vendor/openssl-probe-0.1.6"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"d05e27ee213611ffe7d6348b942e8f942b37114c00cc03cec254295a4a17852e\", \"files\": {}}",
+        "dest": "cargo/vendor/openssl-probe-0.1.6",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/openssl-probe/openssl-probe-0.2.1.crate",
         "sha256": "7c87def4c32ab89d880effc9e097653c8da5d6ef28e6b539d313baaacfbafcbe",
         "dest": "cargo/vendor/openssl-probe-0.2.1"
@@ -4706,6 +4732,32 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/rustls-native-certs/rustls-native-certs-0.6.3.crate",
+        "sha256": "a9aace74cb666635c918e9c12bc0d348266037aa8eb599b5cba565709a8dff00",
+        "dest": "cargo/vendor/rustls-native-certs-0.6.3"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"a9aace74cb666635c918e9c12bc0d348266037aa8eb599b5cba565709a8dff00\", \"files\": {}}",
+        "dest": "cargo/vendor/rustls-native-certs-0.6.3",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/rustls-pemfile/rustls-pemfile-1.0.4.crate",
+        "sha256": "1c74cae0a4cf6ccbbf5f359f08efdf8ee7e1dc532573bf0db71968cb56b1448c",
+        "dest": "cargo/vendor/rustls-pemfile-1.0.4"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"1c74cae0a4cf6ccbbf5f359f08efdf8ee7e1dc532573bf0db71968cb56b1448c\", \"files\": {}}",
+        "dest": "cargo/vendor/rustls-pemfile-1.0.4",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/rustls-webpki/rustls-webpki-0.101.7.crate",
         "sha256": "8b6275d1ee7a1cd780b64aca7726599a1dbc893b1e64144529e55c3c2f745765",
         "dest": "cargo/vendor/rustls-webpki-0.101.7"
@@ -4844,6 +4896,19 @@
         "type": "inline",
         "contents": "{\"package\": \"b6277f0217056f77f1d8f49f2950ac6c278c0d607c45f5ee99328d792ede24ec\", \"files\": {}}",
         "dest": "cargo/vendor/sctk-adwaita-0.10.1",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/security-framework/security-framework-2.11.1.crate",
+        "sha256": "897b2245f0b511c87893af39b033e5ca9cce68824c4d7e7630b5a1d339658d02",
+        "dest": "cargo/vendor/security-framework-2.11.1"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"897b2245f0b511c87893af39b033e5ca9cce68824c4d7e7630b5a1d339658d02\", \"files\": {}}",
+        "dest": "cargo/vendor/security-framework-2.11.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
