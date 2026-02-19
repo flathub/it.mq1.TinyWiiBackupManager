@@ -20,11 +20,11 @@ modules:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
-        CARGO_NET_OFFLINE: 'true'
+        CARGO_NET_OFFLINE: "true"
         RUSTFLAGS: -C link-arg=-fuse-ld=mold
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
-      - cargo --offline build --profile release-lto --features linux-flatpak --locked
+      - cargo --offline build --profile release-lto --features linux --locked
       - install -Dm0755 target/release-lto/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 package/linux/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 package/linux/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
@@ -37,6 +37,6 @@ modules:
       - install -Dm0644 package/linux/usr/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.9+1.tar.gz
-        sha256: 24040d2e04c1693affb0711a887ce991573f3c0e77994653a433c9657c774237
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.10.tar.gz
+        sha256: 6b58af6c76dd095d88b000284ea6f63b743439740637a6cd46b29be8dc2c2106
       - cargo-sources.json
