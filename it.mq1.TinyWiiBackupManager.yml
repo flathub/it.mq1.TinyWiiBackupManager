@@ -26,17 +26,17 @@ modules:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo --offline build --release --locked
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png
-      - install -Dm0644 package/linux/usr/share/applications/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
-      - install -Dm0644 package/linux/usr/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/it.mq1.TinyWiiBackupManager.png
+      - install -Dm0644 package/linux/AppDir/usr/share/applications/it.mq1.TinyWiiBackupManager.desktop ${FLATPAK_DEST}/share/applications/it.mq1.TinyWiiBackupManager.desktop
+      - install -Dm0644 package/linux/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.24.tar.gz
-        sha256: 4654a63a597f4d18e850ba7cd8ff8cda5fd06b9e97429de2b06dbcf073892f0a
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.25.tar.gz
+        sha256: 0293e9215f0e94961a9e820c1ba393097d892e47a64707b97abb9c08b7ec67ee
       - cargo-sources.json
