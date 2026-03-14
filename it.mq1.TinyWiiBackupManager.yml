@@ -38,5 +38,5 @@ modules:
     sources:
       - type: archive
         url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v5.1.26.tar.gz
-        sha256: 8d97dd556fc07752521367b096e8ea86ca0ac6358ca9b651ca00c09b15a1bd48
+        sha256: 167bda70663e3f2d019ce723d15c360b758647e2e120098d85ad0d439ff5a1e0
       - cargo-sources.json

@@ -2810,19 +2810,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libmimalloc-sys/libmimalloc-sys-0.1.44.crate",
-        "sha256": "667f4fec20f29dfc6bc7357c582d91796c169ad7e2fce709468aefeb2c099870",
-        "dest": "cargo/vendor/libmimalloc-sys-0.1.44"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"667f4fec20f29dfc6bc7357c582d91796c169ad7e2fce709468aefeb2c099870\", \"files\": {}}",
-        "dest": "cargo/vendor/libmimalloc-sys-0.1.44",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/libredox/libredox-0.1.14.crate",
         "sha256": "1744e39d1d6a9948f4f388969627434e31128196de472883b39f148769bfe30a",
         "dest": "cargo/vendor/libredox-0.1.14"
@@ -3078,19 +3065,6 @@
         "type": "inline",
         "contents": "{\"package\": \"00c15a6f673ff72ddcc22394663290f870fb224c1bfce55734a75c414150e605\", \"files\": {}}",
         "dest": "cargo/vendor/metal-0.32.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/mimalloc/mimalloc-0.1.48.crate",
-        "sha256": "e1ee66a4b64c74f4ef288bcbb9192ad9c3feaad75193129ac8509af543894fd8",
-        "dest": "cargo/vendor/mimalloc-0.1.48"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"e1ee66a4b64c74f4ef288bcbb9192ad9c3feaad75193129ac8509af543894fd8\", \"files\": {}}",
-        "dest": "cargo/vendor/mimalloc-0.1.48",
         "dest-filename": ".cargo-checksum.json"
     },
     {
