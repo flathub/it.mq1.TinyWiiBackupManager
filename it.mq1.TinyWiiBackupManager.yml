@@ -1,6 +1,6 @@
 id: it.mq1.TinyWiiBackupManager
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -30,8 +30,8 @@ modules:
         CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: clang
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
-      - cargo --offline build --release
-      - install -Dm0755 target/release/twbm-gui ${FLATPAK_DEST}/bin/TinyWiiBackupManager
+      - cargo --offline build --release --no-default-features --features dist-flatpak
+      - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/it.mq1.TinyWiiBackupManager.png
@@ -43,6 +43,6 @@ modules:
       - install -Dm0644 package/linux/it.mq1.TinyWiiBackupManager.metainfo.xml ${FLATPAK_DEST}/share/metainfo/it.mq1.TinyWiiBackupManager.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v6.0.8.tar.gz
-        sha256: f9f88f70b7e1aa4addf645a3491f2623dcf347ca0053e20fb2aa8a40b4361373
+        url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v6.1.0.tar.gz
+        sha256: d58f7b9f8617560f14db951ac82be574d6fa865e6f9da6914481ef53a03a9093
       - cargo-sources.json
