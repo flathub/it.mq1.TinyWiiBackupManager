@@ -22,17 +22,15 @@ modules:
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
         CARGO_NET_OFFLINE: "true"
-        RUSTC_BOOTSTRAP: "1"
         CC: clang
         AR: llvm-ar
-        RANLIB: llvm-ranlib
         CFLAGS: -O3 -flto
         RUSTFLAGS: -C linker-plugin-lto -C link-arg=-fuse-ld=lld
         CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER: clang
         CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: clang
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
-      - cargo --offline build -Z build-std=std,panic_abort --release --no-default-features --features dist-flatpak
+      - cargo --offline build --release --no-default-features --features dist-flatpak
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
