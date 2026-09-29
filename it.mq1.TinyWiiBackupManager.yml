@@ -22,7 +22,7 @@ modules:
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
         CARGO_NET_OFFLINE: "true"
-        RUSTC_BOOTSTRAP: 1
+        RUSTC_BOOTSTRAP: "1"
         CC: clang
         AR: llvm-ar
         RANLIB: llvm-ranlib
