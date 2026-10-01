@@ -2621,14 +2621,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/lucide-icons/lucide-icons-1.48.0.crate",
-        "sha256": "be3ab8b914d5be6ab615033684c2309dc4e835a55fec4d94eb8a4155982ff5dc",
-        "dest": "cargo/vendor/lucide-icons-1.48.0"
+        "url": "https://static.crates.io/crates/lucide-icons/lucide-icons-1.49.0.crate",
+        "sha256": "5433dbd8ff0e0dac0869bce4d851bc27443d05d2e90fe7d155a07fa975b349e7",
+        "dest": "cargo/vendor/lucide-icons-1.49.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"be3ab8b914d5be6ab615033684c2309dc4e835a55fec4d94eb8a4155982ff5dc\", \"files\": {}}",
-        "dest": "cargo/vendor/lucide-icons-1.48.0",
+        "contents": "{\"package\": \"5433dbd8ff0e0dac0869bce4d851bc27443d05d2e90fe7d155a07fa975b349e7\", \"files\": {}}",
+        "dest": "cargo/vendor/lucide-icons-1.49.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3666,14 +3666,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/pin-utils/pin-utils-0.1.0.crate",
-        "sha256": "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184",
-        "dest": "cargo/vendor/pin-utils-0.1.0"
+        "url": "https://static.crates.io/crates/pin-utils/pin-utils-0.1.1.crate",
+        "sha256": "13bee6c73da26345c729282832b60b0363cf3dd9f4bfd81d8551b7a1c889a113",
+        "dest": "cargo/vendor/pin-utils-0.1.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184\", \"files\": {}}",
-        "dest": "cargo/vendor/pin-utils-0.1.0",
+        "contents": "{\"package\": \"13bee6c73da26345c729282832b60b0363cf3dd9f4bfd81d8551b7a1c889a113\", \"files\": {}}",
+        "dest": "cargo/vendor/pin-utils-0.1.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5130,6 +5130,19 @@
         "type": "inline",
         "contents": "{\"package\": \"2ef6dac1e96601b4fb3acccccff2139741fcb757cb9a36089bf5be91cfb285ce\", \"files\": {}}",
         "dest": "cargo/vendor/uuid-1.26.1",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/vc-ltl/vc-ltl-5.3.1.crate",
+        "sha256": "53fe54ba3aacc582bc3a665a6f1ce0a36faf69faaf4f514e800ed5425b010a7b",
+        "dest": "cargo/vendor/vc-ltl-5.3.1"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"53fe54ba3aacc582bc3a665a6f1ce0a36faf69faaf4f514e800ed5425b010a7b\", \"files\": {}}",
+        "dest": "cargo/vendor/vc-ltl-5.3.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
