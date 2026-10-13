@@ -229,6 +229,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/async-compression/async-compression-0.4.50.crate",
+        "sha256": "ee19bd99b43e3691acbad4e840420a4881cea6c0b66a208125a824f8fd53f5a1",
+        "dest": "cargo/vendor/async-compression-0.4.50"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"ee19bd99b43e3691acbad4e840420a4881cea6c0b66a208125a824f8fd53f5a1\", \"files\": {}}",
+        "dest": "cargo/vendor/async-compression-0.4.50",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/async-executor/async-executor-1.14.0.crate",
         "sha256": "c96bf972d85afc50bf5ab8fe2d54d1586b4e0b46c97c50a0c9e71e2f7bcd812a",
         "dest": "cargo/vendor/async-executor-1.14.0"
@@ -848,6 +861,32 @@
         "type": "inline",
         "contents": "{\"package\": \"cfc320937d09e6de266b31b9afb480f197d7a861be86be7cb2ea7e5d1bfffc5e\", \"files\": {}}",
         "dest": "cargo/vendor/combine-4.6.8",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/compression-codecs/compression-codecs-0.4.45.crate",
+        "sha256": "98fc98460ba0ad5317075d3632b8dfc45d0be8c4a49347c2a38272019717614a",
+        "dest": "cargo/vendor/compression-codecs-0.4.45"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"98fc98460ba0ad5317075d3632b8dfc45d0be8c4a49347c2a38272019717614a\", \"files\": {}}",
+        "dest": "cargo/vendor/compression-codecs-0.4.45",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/compression-core/compression-core-0.4.33.crate",
+        "sha256": "6e8ccc4ea9f6acc32d102c0f6d471d11d913ad15f20c04de743374861fa1d414",
+        "dest": "cargo/vendor/compression-core-0.4.33"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"6e8ccc4ea9f6acc32d102c0f6d471d11d913ad15f20c04de743374861fa1d414\", \"files\": {}}",
+        "dest": "cargo/vendor/compression-core-0.4.33",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5798,14 +5837,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wiiload/wiiload-0.5.0.crate",
-        "sha256": "ac216dba8b3ba2c4eac1e70db2698a476e3c4e48433e2f64a92b3d6a66ad8215",
-        "dest": "cargo/vendor/wiiload-0.5.0"
+        "url": "https://static.crates.io/crates/wiiload/wiiload-0.6.0.crate",
+        "sha256": "40c003dce8785ebb57d9319c1d48830808195c4ade665c2a8e64f467afd4a771",
+        "dest": "cargo/vendor/wiiload-0.6.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ac216dba8b3ba2c4eac1e70db2698a476e3c4e48433e2f64a92b3d6a66ad8215\", \"files\": {}}",
-        "dest": "cargo/vendor/wiiload-0.5.0",
+        "contents": "{\"package\": \"40c003dce8785ebb57d9319c1d48830808195c4ade665c2a8e64f467afd4a771\", \"files\": {}}",
+        "dest": "cargo/vendor/wiiload-0.6.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
