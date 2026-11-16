@@ -3,7 +3,7 @@ runtime: org.freedesktop.Platform
 runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.rust-stable
+  - org.freedesktop.Sdk.Extension.llvm23
 command: TinyWiiBackupManager
 finish-args:
   - --share=network
@@ -17,14 +17,14 @@ modules:
   - name: TinyWiiBackupManager
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/rust-stable/bin
+      append-path: /run/build/TinyWiiBackupManager/rust/bin:/usr/lib/sdk/llvm23/bin
+      prepend-ld-library-path: /usr/lib/sdk/llvm23/lib
       env:
         CARGO_HOME: /run/build/TinyWiiBackupManager/cargo
-        CARGO_NET_OFFLINE: "true"
-        RUSTFLAGS: -C link-arg=-fuse-ld=mold
     build-commands:
-      - cargo fetch --manifest-path Cargo.toml
-      - cargo build --release --no-default-features --features dist-flatpak
+      - ./rust-toolchain/install.sh --prefix=/run/build/TinyWiiBackupManager/rust --components=rustc,cargo,rust-std-$(uname -m)-unknown-linux-gnu --disable-ldconfig
+      - cargo fetch --manifest-path Cargo.toml --frozen
+      - cargo build --config .cargo/dist.toml --frozen --release --no-default-features --features dist-flatpak
       - install -Dm0755 target/release/TinyWiiBackupManager ${FLATPAK_DEST}/bin/TinyWiiBackupManager
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/apps/it.mq1.TinyWiiBackupManager.png
       - install -Dm0644 package/linux/AppDir/usr/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/it.mq1.TinyWiiBackupManager.png
@@ -40,3 +40,17 @@ modules:
         url: https://github.com/mq1/TinyWiiBackupManager/archive/refs/tags/v6.2.0.tar.gz
         sha256: 459c933805562cd8ace4ce46a32ea70c530ec898c6939107100410a875ac4464
       - cargo-sources.json
+
+      # using a specific rust version instead of org.freedesktop.Sdk.Extension.rust-stable, so we can reliably enable linker-plugin-lto
+      - type: archive
+        only-arches:
+          - x86_64
+        dest: rust-toolchain
+        url: https://static.rust-lang.org/dist/rust-1.100.0-x86_64-unknown-linux-gnu.tar.xz
+        sha256: 98ee6bec240e1cfe944f17e7092412dc5ef6e008484bb668c6936d35a7d15acd
+      - type: archive
+        only-arches:
+          - aarch64
+        dest: rust-toolchain
+        url: https://static.rust-lang.org/dist/rust-1.100.0-aarch64-unknown-linux-gnu.tar.xz
+        sha256: a21f6a21818df07c1e2e7addb570af5444b3fa9dd61e3a207f4fb1c5a5e665c9
